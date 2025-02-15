@@ -13,11 +13,6 @@ int b = 20
 
  printf("%d", a + b );
 
- // Ahmed Task 
-
- for(int i = 0 ; i < 10, i++)
-  printf("%d",i + 1); 
-  
  printf("Square root for %d = %d",100,getSquareRoot(100));   
 
 return 0;}
