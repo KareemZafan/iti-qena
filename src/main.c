@@ -2,8 +2,15 @@
 
 #include<math.h>
 
-long getSquareRoot(long value){
-  return sqrt(value); 
+double multi (double a, double b){
+  return a*b;
+}
+double div (double a, double b){
+  if (b==0) return null;
+  return a/b;
+}
+double add (double a, double b){
+  return a+b;
 }
 
 double sub(double a, double b){
@@ -24,14 +31,15 @@ double abs(double a){
 int main(){
 
 int a = 10; 
-int b = 20 
+int b = 20;
 
- printf("%d", a + b );
-
+ printf("%d", multi(a,b) );
+ printf("%d", add(a,b) );
+ printf("%d", div(a,b) );
  printf("Square root for %d = %d",100,getSquareRoot(100));   
  printf("%d - %d = %d"100,10,sub(100,10)); // 90 
  printf("%d % %d",10,3,mod(10,3)); //1 
  printf("abs of %d = %d",-10,abs(-10)); //10 
- 
 
-return 0;}
+return 0;
+}
